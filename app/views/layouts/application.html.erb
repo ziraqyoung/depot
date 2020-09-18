@@ -10,6 +10,9 @@
   </head>
 
   <body>
-    <%= yield %>
+
+    <main class="<%= controller.controller_name %>" role="main">
+      <%= yield %>
+    </main>
   </body>
 </html>
