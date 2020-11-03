@@ -11,6 +11,8 @@ module Depot
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
+    config.middleware.use I18n::JS::Middleware
+
     # Do not log sensitive information eg Credit card numbers
     config.filter_parameters += [:credit_card_number]
 
